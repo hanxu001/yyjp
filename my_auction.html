@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的竞拍</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/my_auction.css" />
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fff;">
+    <div class="header">
+        我的竞拍
+        <div class="header-left">
+            <img src="images/tab/return.png" alt="" class="header-left-img">
+        </div>
+    </div>
+    <div class="w-list">
+        <div class="w-nav">
+            <div class="w-nav-item w-nav-item-on">
+                <span class="w-nav-txt">全部</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">正在拍</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">我拍中</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">未拍中</span>
+            </div>
+            <div class="w-nav-item">
+                <span class="w-nav-txt">待付款</span>
+            </div>
+        </div>
+        <div style="height: 0.3rem;background-color: #f0f0f0;"></div>
+        <div class="qiehuan-list" style="display: block;">
+            <p>1</p>
+        </div>
+        <div class="qiehuan-list" style="display: none;">
+            <p>1</p>
+        </div>
+    </div>
+    <script>
+    $(function() {
+        $(".w-nav-item").each(function(i) {
+            $(this).click(function() {
+                $(this).addClass("w-nav-item-on").siblings().removeClass("w-nav-item-on");
+                $(".qiehuan-list:eq(" + i + ")").show().siblings(".qiehuan-list").hide();
+            })
+        })
+    });
+    </script>
+</body>
+
+</html>

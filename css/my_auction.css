@@ -1,0 +1,34 @@
+.w-list{
+    margin-top: 1rem;
+}
+.w-nav {
+    display: -webkit-box;
+    display: box;
+    height: .86rem;
+    background-color: #fff;
+}
+
+.w-nav-item {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    cursor: pointer;
+    -webkit-box-align: stretch;
+    -webkit-box-flex: 1;
+    box-flex: 1;
+}
+
+.w-nav-txt {
+    display: inline-block;
+    overflow: hidden;
+    color: #4c4c4c;
+    font-size: .28rem;
+    white-space: nowrap;
+    line-height: .86rem;
+}
+
+.w-nav-item-on .w-nav-txt {
+    border-bottom: .04rem solid #ff334b;
+    color: #FD25A2;
+}
