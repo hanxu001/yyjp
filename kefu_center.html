@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>客服中心</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/kefu_center.css" />
+    <script type="text/javascript" src="js/rem.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body style="background-color: #fff;">
+    <dic class="header">
+        客服中心
+        <div class="header-left">
+            <img src="images/tab/return.png" alt="" class="header-left-img">
+        </div>
+    </dic>
+    <h1 style="margin-top: 1rem;">手机验证问题</h1>
+    <div class="section">
+        <h2 class="clearfix">绑定手机收不到短信验证码怎么办？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.确认短信是否被手机软件拦截或过滤</p>
+            <p>2.确认手机是否正常接收短信（信号、欠费、停机等）</p>
+            <p>3.短信收发过程可能会有延迟，请耐心等待</p>
+            <p>4.仍未收到，请联系客服为您服务</p>
+        </div>
+    </div>
+    <h1>拍卖问题</h1>
+    <div class="section">
+        <h2 class="clearfix">拍卖术语说明<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">如何购买拍币？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">什么是赠币？如何活动<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">竞拍采用什么规则？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">竞拍有哪些技巧？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">一场拍卖什么时候结束？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">竞拍会产生什么费用？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">什么时候为竞拍时段？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <h1>商品物流问题</h1>
+    <div class="section">
+        <h2 class="clearfix">充值卡如何支付到支付宝或者微信？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">订单支付后什么时候能发货？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">长期未收到奖品是怎么回事？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="clearfix">商品是正品吗？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="section" style="margin-bottom: 1.2rem;">
+        <h2 class="clearfix">商品可以退货吗？<span class="icon-top"></span></h2>
+        <div>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
+            <p>4.</p>
+        </div>
+    </div>
+    <div class="pagefooter">
+        <p>联系客服</p>
+    </div>
+    <script>
+    $('h2').siblings('div').hide();
+    $('h2').each(function(i, e) {
+        $(this).click(function() {
+            $('h2').eq(i).siblings('div').toggle();
+            if ($('h2').eq(i).find('span').attr('class') == 'icon-top') {
+                $('h2').eq(i).find('span').attr('class', 'icon-bottom');
+            } else {
+                $('h2').eq(i).find('span').attr('class', 'icon-top');
+            }
+        })
+    });
+    $('.pagefooter').click(function() {
+        // 联系客服
+    })
+    </script>
+</body>
+
+</html>

@@ -141,12 +141,22 @@ a {
 .number_days_gift {
     width: 0.96rem;
     height: 1.2rem;
-    margin-top: .20rem;
+}
+
+.gift_open {
+    width: 1.46rem;
+    height: 1.11rem;
+    display: none;
 }
 
 .seven_day_pic,
 .fifteen_day_pic,
-.thirty_day_pic {}
+.thirty_day_pic {
+    text-align: center;
+    height: 1.4rem;
+    padding-top: .2rem;
+    /*border: 1px solid #000;*/
+}
 
 .received {
     width: .80rem;
@@ -173,6 +183,7 @@ a {
 .thirty_day_title {
     color: #666;
     font-size: .28rem;
+    /*   border:1px solid #000;*/
 }
 
 
@@ -277,9 +288,6 @@ a {
     background: none;
 }
 
-
-/*pup_up*/
-
 .pup_up,
 .instructions {
     position: fixed;
@@ -293,20 +301,8 @@ a {
 }
 
 .pup_detail {
-    /*  width: 1.95rem;
-    height: 1.80rem;
-    background: url(../images/qiandao/beijing.png) no-repeat;
-    background-size: 1.95rem 1.80rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate3d(-50%, -50%, 0);
-    -moz-transform: translate3d(-50%, -50%, 0);
-    -ms-transform: translate3d(-50%, -50%, 0);
-    -o-transform: translate3d(-50%, -50%, 0);
-    transform: translate3d(-50%, -50%, 0);*/
     width: 5rem;
-    height: 5rem;
+    /*height: 5rem;*/
     position: absolute;
     background: #fff;
     top: 50%;
@@ -324,6 +320,7 @@ a {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: .10rem;
+    padding-bottom: .6rem;
 }
 
 .pup_detail p {
@@ -351,7 +348,7 @@ a {
 }
 
 .pup_title {
-    margin: .20rem auto .10rem auto;
+    /* margin: .20rem auto .10rem auto;*/
     color: rgb(249, 0, 48);
     text-align: center;
 }

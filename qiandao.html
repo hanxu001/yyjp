@@ -55,6 +55,7 @@
                 <li>
                     <div class="seven_day_pic">
                         <img src="images/qiandao/gift.png" alt="" class="number_days_gift">
+                        <img src="images/qiandao/gift_open.png" alt="" class="gift_open">
                     </div>
                     <div class="seven_day_title">
                         <span>累计7天</span>
@@ -63,6 +64,7 @@
                 <li>
                     <div class="fifteen_day_pic">
                         <img src="images/qiandao/gift.png" alt="" class="number_days_gift">
+                        <img src="images/qiandao/gift_open.png" alt="" class="gift_open">
                     </div>
                     <div class="fifteen_day_title">
                         <span>累计15天</span>
@@ -71,6 +73,7 @@
                 <li>
                     <div class="thirty_day_pic">
                         <img src="images/qiandao/gift.png" alt="" class="number_days_gift">
+                        <img src="images/qiandao/gift_open.png" alt="" class="gift_open">
                     </div>
                     <div class="thirty_day_title">
                         <span>累计一个月</span>
@@ -192,8 +195,7 @@
         </div>
     </div>
     <div class="pup_up">
-        <div class="pup_detail">
-        </div>
+        <div class="pup_detail"></div>
     </div>
     <div class="instructions">
         <div class="instructions_detail">
@@ -256,7 +258,9 @@
         $(".close_detail").click(function() {
             $(".pup_up").fadeOut();
             // $(".seven_day_pic").append(`<div class="received">已领取</div>`);
-            $(".seven_day_pic > img").attr('src', 'images/qiandao/gift_open.png')
+            // $(".seven_day_pic > img").attr('src', 'images/qiandao/gift_open.png')
+            $(".seven_day_pic > .number_days_gift").hide();
+            $(".seven_day_pic > .gift_open").show();
         })
     });
     $(".number_days_content .fifteen_day_pic").click(function() {
@@ -276,7 +280,9 @@
         $(".close_detail").click(function() {
             $(".pup_up").fadeOut();
             // $(".fifteen_day_pic").append(`<div class="received">已领取</div>`);
-            $(".fifteen_day_pic > img").attr('src', 'images/qiandao/gift_open.png')
+            // $(".fifteen_day_pic > img").attr('src', 'images/qiandao/gift_open.png')
+            $(".fifteen_day_pic > .number_days_gift").hide();
+            $(".fifteen_day_pic > .gift_open").show();
         })
     });
     $(".number_days_content .thirty_day_pic").click(function() {
@@ -294,7 +300,9 @@
         $(".close_detail").click(function() {
             $(".pup_up").fadeOut();
             // $(".thirty_day_pic").append(`<div class="received">已领取</div>`);
-            $(".thirty_day_pic > img").attr('src', 'images/qiandao/gift_open.png')
+            // $(".thirty_day_pic > img").attr('src', 'images/qiandao/gift_open.png')
+            $(".thirty_day_pic > .number_days_gift").hide();
+            $(".thirty_day_pic > .gift_open").show();
         })
     });
     </script>

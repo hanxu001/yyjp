@@ -24,10 +24,26 @@
 		<!--轮播图-->
 		<div class="swiper-container">
 			<div class="swiper-wrapper">
-				<a class="swiper-slide" href="#1"><img class="swiper-img" src="" alt="Slide 1"></a>
-				<a class="swiper-slide" href="#2"><img class="swiper-img" src="" alt="Slide 2"></a>
-				<a class="swiper-slide" href="#3"><img class="swiper-img" src="" alt="Slide 3"></a>
-				<a class="swiper-slide" href="#3"><img class="swiper-img" src="" alt="Slide 4"></a>
+				<a class="swiper-slide" href="#1">
+					<img class="swiper-img" src="" alt="Slide 1">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+				<a class="swiper-slide" href="#2">
+					<img class="swiper-img" src="" alt="Slide 2">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+				<a class="swiper-slide" href="#3">
+					<img class="swiper-img" src="" alt="Slide 3">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
+				<a class="swiper-slide" href="#3">
+					<img class="swiper-img" src="" alt="Slide 4">
+					<img class="swiper_completed" src=" images/product_detail/jinpaichenggong@2x.png" alt="竞拍成功"/>
+					<img class="swiper_already" src=" images/product_detail/yichengjiao@2x.png" alt="已成交"/>
+				</a>
 			</div>
 			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
@@ -48,6 +64,7 @@
 		<div class="s_auction_now" id="xiding">
 			<div class="s_auction_now_t">
 				<p class="st_txt">距结束仅剩</p>
+				<p class="st_txt_completed">竞拍已结束</p>
 				<p class="st_count_down">00:00:10</p>
 			</div>
 			<div class="s_auction_now_price">
@@ -263,6 +280,15 @@
 			<p class="txtabove">出价</p>
 			<p class="txtbelow">1拍币/次</p>
 		</div>
+		<!--竞拍成功--显示的按钮-->
+		<div class="auction_btn_completed clearfix">
+			<a class="check_order_btn" href="#">查看订单</a>
+			<a class="gotonext_btn" href="#">前往下一期</a>
+		</div>
+		<!---->
+		<!--已成交--显示的按钮-->
+		<div class="auction_btn_already">前往下一期</div>
+		<!---->
 		<!---->
 		<script>
 			//	轮播图

@@ -41,6 +41,30 @@
 	height: 0.16rem;
 	border-radius: 50%;
 }
+/*竞拍成功状态--轮播图*/
+.swiper_completed{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.22rem;
+	margin-top: -1.07rem;
+	width: 2.45rem;
+	height: 2.14rem;
+	display: none;
+}
+/**/
+/*已成交--轮播图*/
+.swiper_already{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -1.22rem;
+	margin-top: -1.07rem;
+	width: 2.45rem;
+	height: 2.14rem;
+	display: none;
+}
+/**/
 /*弹幕*/
 .bullet{
 	padding: 0 0.2rem;
@@ -65,7 +89,7 @@
 	color: #333333;
 	margin-bottom: 0.2rem;
 }
-..s_describe_content{
+.s_describe_content{
 	font-size: 0.24rem;
 	color: #737373;
 }
@@ -86,12 +110,20 @@
 }
 .st_txt{
 	font-size: 0.26rem;
-	margin-bottom: 0.2rem;
+	margin-bottom: 0.2rem;	
 }
+/*竞拍结束状态--倒计时*/
+.st_txt_completed{
+	font-size: 0.26rem;
+	margin-bottom: 0.2rem;
+	display: none;
+}
+/**/
 .st_count_down{
 	font-size: 0.48rem;
 	font-weight: bolder;
-	color: #4D4D4D;
+	/*color: #4D4D4D;*/
+	color: #FF334B;
 	margin-bottom: 0.4rem;
 }
 .s_auction_now_price{
@@ -410,16 +442,60 @@
 /*底部出价按钮*/
 .auction_btn{
 	width: 6.98rem;
-	height: 0.68rem;
+	height: 0.88rem;
 	position: fixed;
 	left: 0.26rem;
 	bottom: 0;
 	border-radius: 0.1rem;
 	background: #FF334B;
 	color: #FFFFFF;
-	font-size: 0.22rem;
+	font-size: 0.26rem;
 	text-align: center;
+/*	display: none;*/
 }
 .auction_btn .txtabove{
-	font-size: 0.28rem;
+	font-size: 0.32rem;
+}
+/*竞拍完成--底部按钮*/
+.auction_btn_completed{
+	width: 6.98rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	position: fixed;
+	left: 0.26rem;
+	bottom: 0;
+	font-size: 0.26rem;
+	display: none;
+}
+.check_order_btn{
+	width: 3.34rem;
+	height: 0.88rem;
+	float: left;
+	border-radius: 0.1rem;
+	background-color: #ffb873;
+	text-align: center;
+	color: #FFFFFF;
+}
+.gotonext_btn{
+	width: 3.34rem;
+	height: 0.88rem;
+	float: right;
+	border-radius: 0.1rem;
+	background-color: #FF334B;
+	text-align: center;
+	color: #FFFFFF;
+}
+.auction_btn_already{
+	width: 6.98rem;
+	height: 0.88rem;
+	line-height: 0.88rem;
+	position: fixed;
+	left: 0.26rem;
+	bottom: 0;
+	border-radius: 0.1rem;
+	background: #FF334B;
+	color: #FFFFFF;
+	font-size: 0.36rem;
+	text-align: center;
+	display: none;
 }
